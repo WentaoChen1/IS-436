@@ -20,16 +20,5 @@ $result = $conn->query($sql);
 // Mysql_num_row is counting table row
 $count=$result->num_rows;
 
-// If result matched $username and $password, table row must be 1 row
-if($count==1){
-    session_start();
-    $_SESSION['loggedin'] = true;
-    $_SESSION['username'] = $username;
-	
-	header("Location: page1.php"); /* Redirect browser */
-	}
-else
-	{
-	header("Location: index.html"); /* Redirect browser */
-exit();
-}
+
+?>

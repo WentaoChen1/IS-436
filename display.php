@@ -68,8 +68,8 @@ echo "<HR>";
 echo "<h2>Data from notes table</h2> <Br>";
 
 echo "<Table border=0 width=50%>";
-echo "<TR bgcolor=#85e085>";
-echo "<TD> nid </TD><TD> label </TD><TD> message </TD>";
+echo "<TR style='background-color:#53eff5; text-align:center; font-weight:bold;'>";
+echo "<TD> nid </TD><TD> label </TD><TD> message </TD> <TD> Delete </TD>";
 echo "</TR>";
 
 if ($result->num_rows > 0) {
@@ -84,8 +84,13 @@ if ($result->num_rows > 0) {
 		echo "</TD>";
 		echo "<TD>";
         echo $row["notes"];
+		echo "</TD>";
+		echo "<TD>";
+		echo "<A href=del.php?nid=$row[nid]> <img src=delete.jpg width=25 height=25  onclick=\"return confirm('Are you sure you want to delete this item?');\"> </A> ";
 		echo "</TD>";		
 		echo "</TR>";
+		
+		
     }
 } else {
     echo "0 results";

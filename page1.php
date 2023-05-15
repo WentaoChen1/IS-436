@@ -64,10 +64,11 @@ include 'member.php';
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5 .col-6">
 		<form action="add.php">
           <button type="submit" class="btn btn-info btn-lg px-4 me-sm-3">Get Started</button></form>
+		<form action="https://docs.google.com/document/d/1NeSS_ZajgWpH4lKmGTlZa9mTAtN8p2QdaRzCTt4orhc/edit?usp=sharing">
+			<button type="submit" class="btn btn-info btn-lg px-4 me-sm-3">User Guide</button></form>	  
         </div>
       </div>
-    
-</div>
+    </div>
 	</div>
 </div>
 
